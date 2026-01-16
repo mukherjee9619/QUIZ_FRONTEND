@@ -13,39 +13,36 @@ export default function Header({ onSearch }) {
   const email =
     localStorage.getItem("user_email") || sessionStorage.getItem("user_email");
 
+  const handleLogout = () => {
+    logout(); // clear storage
+    navigate("/login"); // ✅ safe navigation
+  };
+
   return (
     <header className="quiz-header">
       <div className="header-container">
-        {/* LOGO */}
         <NavLink to="/" className="logo">
           <img src="/logo.png" alt="SM Quiz App" className="logo-img" />
           <span className="logo-text">QUIZ APP</span>
         </NavLink>
 
-        {/* 🔍 LIVE SEARCH */}
         <div className="header-search">
           <input
             type="text"
             placeholder="Search subject..."
             value={query}
             onChange={(e) => {
-              const value = e.target.value;
-              setQuery(value);
-              if (onSearch) onSearch(value); // 🔥 LIVE SEARCH
+              setQuery(e.target.value);
+              onSearch?.(e.target.value);
             }}
           />
         </div>
 
-        {/* RIGHT ACTIONS */}
         <div className="nav-links">
-          {token && (
-            <div className="user-email" title={email}>
-              {email}
-            </div>
-          )}
+          {token && <div className="user-email">{email}</div>}
 
           {token ? (
-            <button onClick={logout} className="logout-btn">
+            <button onClick={handleLogout} className="logout-btn">
               Logout
             </button>
           ) : (
