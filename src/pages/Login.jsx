@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
-import "../styles/Login.css";
+import "../styles/login.css";
 
 export default function Login() {
   const navigate = useNavigate();

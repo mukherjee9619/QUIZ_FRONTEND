@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import toast from "react-hot-toast";
-import "../styles/Register.css";
+import "../styles/register.css";
 
 export default function Register() {
   const navigate = useNavigate();

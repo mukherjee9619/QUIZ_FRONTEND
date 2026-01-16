@@ -16,7 +16,7 @@ import "prismjs/components/prism-java";
 import "prismjs/components/prism-python";
 import "prismjs/components/prism-javascript";
 
-import "../styles/Quiz.css";
+import "../styles/quiz.css";
 
 const MAX_WARNINGS = 3;
 const NEGATIVE_MARK = 1 / 3;

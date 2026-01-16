@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Timer.css"; // add this css file
+import "../styles/timer.css"; // add this css file
 
 export default function TimerRing({ timeLeft }) {
   const minutes = Math.floor(timeLeft / 60);

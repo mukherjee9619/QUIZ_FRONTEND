@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaBookOpen } from "react-icons/fa";
-import "../styles/Home.css";
+import "../styles/home.css";
 
 /* 🔍 Highlight matched text */
 const highlightText = (text, search) => {

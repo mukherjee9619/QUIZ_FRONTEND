@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Palette.css";
+import "../styles/palette.css";
 
 export default function QuestionPalette({
   questions,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import "../styles/Header.css";
+import "../styles/header.css";
 import { logout } from "../utils/auth";
 
 export default function Header({ onSearch }) {

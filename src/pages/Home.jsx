@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import SubjectCard from "../components/SubjectCard";
 import Header from "../components/Header";
 import toast from "react-hot-toast";
-import "../styles/Home.css";
+import "../styles/home.css";
 import { FiArrowUp } from "react-icons/fi";
 
 const LIMIT = 8;

@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../styles/Result.css";
+import "../styles/result.css";
 
 export default function Result() {
   const { state } = useLocation();

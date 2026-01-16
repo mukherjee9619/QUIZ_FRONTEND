@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../styles/Review.css";
+import "../styles/review.css";
 
 export default function Review() {
   const { state } = useLocation();
